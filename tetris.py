@@ -3,14 +3,23 @@ import time
 import random
 import sys
 
+
+
+###########
+###########
+###########
+
+
+
+# function clear() clears the screen by printing a special driver code
 def clear():
     print('\033[2J\033[H')
     return 
 
 
-
 # function get_pressed
-#
+# requires an input of type keyboard.KeyboardEvent (meant to be used after being hooked up to a keyboard.hook())
+# returns both the string of the key pressed (whether that be 'a', 'ctrl', etc.) and whether the key was pushed "down" or pushed "up" (let go)
 def get_key_pressed(event):
     # event is of type `keyboard.KeyboardEvent` (aka link this up directly to keyboard.hook)
     
