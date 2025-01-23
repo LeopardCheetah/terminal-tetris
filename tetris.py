@@ -50,7 +50,7 @@ def get_key_pressed(event):
 
 
 
-def track_key_presses(event):
+def track_down_key_presses(event):
     # not using the dummy variable
 
     _char, _up_down = get_key_pressed(event)
@@ -80,5 +80,5 @@ def track_key_presses(event):
 
 
 
-keyboard.hook(track_key_presses)
-keyboard.wait(hotkey='ctrl+q')
+# keyboard.hook(track_down_key_presses)
+# keyboard.wait(hotkey='ctrl+q')
